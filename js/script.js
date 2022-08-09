@@ -15,4 +15,14 @@ window.addEventListener("DOMContentLoaded", () => {
       menu.classList.toggle("header__list_active");
     });
   });
+
+  function scrollToElement (selector) {
+  $('html, body').animate({
+    scrollTop: $(selector).offset().top
+  }, 2000);    
+  };
+
+  $(document).on('click', 'a.smooth', function () {
+    scrollToElement($(this).attr('href'));
+  });
 });

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #2B303A;
 }
 
 .container {
@@ -23,7 +24,7 @@ a {
 }
 a:hover {
   color: #3461FF;
-  transition: 0.2s all;
+  transition: 0.3s all;
 }
 
 span {
@@ -51,13 +52,20 @@ span {
 
 .button {
   background: #3461FF;
-  max-width: 210px;
+  max-width: 212px;
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
   padding: 16px 45px;
+  border: 1px solid #3461FF;
   cursor: pointer;
+}
+.button:hover {
+  transition: 0.3s all;
+  border: 1px solid #3461FF;
+  background-color: white;
+  color: #3461FF;
 }
 
 @font-face {
