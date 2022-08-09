@@ -1,0 +1,70 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  list-style: none
+}
+
+a {
+  color: #2B303A;
+  text-decoration: none;
+
+  &:hover {
+    color: #3461FF;
+    transition: 0.2s all;
+  }
+}
+
+span {
+  color: #3461FF;
+  font-weight: 800;
+  font-size: 38px;
+}
+
+.subtitle {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: #2B303A;
+  @media (max-width: 426px) {
+    font-size: 30px;
+    line-height: 39px;
+
+    span {
+      font-size: 30px;
+      line-height: 39px;
+    }
+  }
+}
+
+.button {
+  background: #3461FF;
+  max-width: 210px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  padding: 16px 45px;
+  cursor: pointer;
+}
+
+@import"fonts";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/promo";
+@import "blocks/subpromo";
+@import "blocks/cards";
+@import "blocks/reviews";
+@import "blocks/text";

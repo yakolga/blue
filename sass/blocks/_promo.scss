@@ -1,0 +1,23 @@
+.promo {
+  background-image: url("../images/promo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  &__wrapper {
+    padding-top: 300px;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 70px;
+    color: #FFFFFF;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 426px) {
+    &__title {
+      font-size: 35px;
+      line-height: 44px;
+    }
+  }
+}
