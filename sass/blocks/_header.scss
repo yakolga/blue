@@ -14,6 +14,9 @@
       flex-direction: column;
     }
   }
+  &__button {
+    position: relative;
+  }
 
   &__logo {
     font-weight: 800;
@@ -21,6 +24,14 @@
     line-height: 57px;
     color: #2B303A;
   }
+
+    &__language {
+      display: block;
+      background: #2B303A;
+      width: 60px;
+      height: 30px;
+      border-radius: 5px;
+    }
 
   &__list {
     display: flex;
@@ -122,4 +133,40 @@
       padding: 15px 0;
     }
   }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &__arrow {
+    width: 10px;
+    margin-left: 3px;
+  }
+
+  &__flag {
+    max-height: 15px;
+    margin-right: 3px;
+  }
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 10px;
+  z-index: 100;
+  right: 0;
+  width: 100%;
+  li {
+    margin-right: 0;
+  }
+}
+
+.none {
+  display: none;
+  transition: 0.5s all;
 }

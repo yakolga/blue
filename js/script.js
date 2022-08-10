@@ -25,4 +25,19 @@ window.addEventListener("DOMContentLoaded", () => {
   $(document).on('click', 'a.smooth', function () {
     scrollToElement($(this).attr('href'));
   });
+
+  const menus = document.querySelector('.menu'), 
+        links = document.querySelector('.links'), 
+        arrow = links.querySelector('.links__arrow');
+
+  links.addEventListener('click', (e) => {
+    menus.classList.toggle('none');
+    if (!menus.classList.contains('none')) {
+      arrow.style.transform = 'rotate(180deg)';
+      arrow.style.transition = '0.4s all';
+    } else if (menus.classList.contains('none')) {
+      arrow.style.transform = 'rotate(0)';
+      arrow.style.transition = '0.4s all';
+    }
+  });
 });
