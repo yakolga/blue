@@ -14,10 +14,19 @@
     max-width: 500px;
     margin-bottom: 20px;
   }
+  @media (max-width: 769px) {
+    &__wrapper {
+      padding-top: 240px;
+    }
+  }
   @media (max-width: 426px) {
+    height: 480px;
     &__title {
       font-size: 35px;
       line-height: 44px;
+    }
+    &__wrapper {
+      padding-top: 171px;
     }
   }
 }
